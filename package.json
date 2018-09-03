@@ -19,11 +19,11 @@
         "commands": [
             {
                 "command": "extension.importFont",
-                "title": "Import Font"
+                "title": "Webfont: Import Font"
             },
             {
                 "command": "extension.downloadFont",
-                "title": "Download Font"
+                "title": "Webfont: Download Font"
             }
         ]
     },

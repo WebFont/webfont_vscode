@@ -1,6 +1,6 @@
 # webfont-vscode README
 
-This is the README for your extension "webfont-vscode". After writing up a brief description, we recommend including the following sections.
+Plugin for importing fonts from [FontStorage.com](https://fontstorage.com/) or [Webfont.ru](https://webfont.ru). 
 
 ## Features
 
