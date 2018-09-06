@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
         return uiFontsList;
     }
 
-    let importFontCommand = vscode.commands.registerCommand('extension.importFont', async () => {
+    let importFontCommand = vscode.commands.registerCommand('webfont.importFont', async () => {
         const uiFontsList = await prepareUIFontList();
         const selectedFont = await vscode.window.showQuickPick(uiFontsList, { placeHolder: 'Select the font' });
 
@@ -73,7 +73,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     context.subscriptions.push(importFontCommand);
 
-    let downloadFontCommand = vscode.commands.registerCommand('extension.downloadFont', async () => {
+    let downloadFontCommand = vscode.commands.registerCommand('webfont.downloadFont', async () => {
         const uiFontsList = await prepareUIFontList();
         const selectedFont = await vscode.window.showQuickPick(uiFontsList, { placeHolder: 'Select the font' });
 

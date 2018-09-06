@@ -11,21 +11,33 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.importFont",
-        "onCommand:extension.downloadFont"
+        "onCommand:webfont.importFont",
+        "onCommand:webfont.downloadFont"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.importFont",
+                "command": "webfont.importFont",
                 "title": "Webfont: Import Font"
             },
             {
-                "command": "extension.downloadFont",
+                "command": "webfont.downloadFont",
                 "title": "Webfont: Download Font"
             }
-        ]
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "editorLangId == css",
+                    "command": "webfont.importFont"
+                },
+                {
+                    "when": "editorLangId == css",
+                    "command": "webfont.downloadFont"
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
