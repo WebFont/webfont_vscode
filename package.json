@@ -35,7 +35,40 @@
                 {
                     "when": "editorLangId == css",
                     "command": "webfont.downloadFont"
+                },
+                {
+                    "when": "resourceExtname == .sass",
+                    "command": "webfont.importFont"
+                },
+                {
+                    "when": "resourceExtname == .sass",
+                    "command": "webfont.downloadFont"
+                },
+                {
+                    "when": "resourceExtname == .scss",
+                    "command": "webfont.importFont"
+                },
+                {
+                    "when": "resourceExtname == .scss",
+                    "command": "webfont.downloadFont"
+                },
+                {
+                    "when": "resourceExtname == .less",
+                    "command": "webfont.importFont"
+                },
+                {
+                    "when": "resourceExtname == .less",
+                    "command": "webfont.downloadFont"
+                },
+                {
+                    "when": "resourceExtname == .styl",
+                    "command": "webfont.importFont"
+                },
+                {
+                    "when": "resourceExtname == .styl",
+                    "command": "webfont.downloadFont"
                 }
+
             ]
         }
     },
