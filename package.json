@@ -37,6 +37,14 @@
                     "command": "webfont.downloadFont"
                 },
                 {
+                    "when": "editorLangId == html",
+                    "command": "webfont.importFont"
+                },
+                {
+                    "when": "editorLangId == html",
+                    "command": "webfont.downloadFont"
+                },
+                {
                     "when": "resourceExtname == .sass",
                     "command": "webfont.importFont"
                 },
