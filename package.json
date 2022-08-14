@@ -1,82 +1,53 @@
 {
     "name": "webfont-vscode",
-    "displayName": "webfont-vscode",
-    "description": "Plugin for importing fonts from https://fontstorage.com/.",
-    "version": "0.0.1",
+    "displayName": "Webfont",
+    "description": "Import and download fonts from Fontstorage.com collection.",
+    "version": "1.2.0",
+    "icon": "images/logo.jpg",
     "publisher": "WebFont",
     "engines": {
-        "vscode": "^1.26.0"
+        "vscode": "^1.68.0"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:webfont.importFont",
-        "onCommand:webfont.downloadFont"
+        "onCommand:webfont"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "webfont.importFont",
-                "title": "Webfont: Import Font"
-            },
-            {
-                "command": "webfont.downloadFont",
-                "title": "Webfont: Download Font"
+                "command": "webfont",
+                "title": "Webfont"
             }
         ],
         "menus": {
             "editor/context": [
                 {
                     "when": "editorLangId == css",
-                    "command": "webfont.importFont"
-                },
-                {
-                    "when": "editorLangId == css",
-                    "command": "webfont.downloadFont"
+                    "command": "webfont"
                 },
                 {
                     "when": "editorLangId == html",
-                    "command": "webfont.importFont"
-                },
-                {
-                    "when": "editorLangId == html",
-                    "command": "webfont.downloadFont"
+                    "command": "webfont"
                 },
                 {
                     "when": "resourceExtname == .sass",
-                    "command": "webfont.importFont"
-                },
-                {
-                    "when": "resourceExtname == .sass",
-                    "command": "webfont.downloadFont"
+                    "command": "webfont"
                 },
                 {
                     "when": "resourceExtname == .scss",
-                    "command": "webfont.importFont"
-                },
-                {
-                    "when": "resourceExtname == .scss",
-                    "command": "webfont.downloadFont"
+                    "command": "webfont"
                 },
                 {
                     "when": "resourceExtname == .less",
-                    "command": "webfont.importFont"
-                },
-                {
-                    "when": "resourceExtname == .less",
-                    "command": "webfont.downloadFont"
+                    "command": "webfont"
                 },
                 {
                     "when": "resourceExtname == .styl",
-                    "command": "webfont.importFont"
-                },
-                {
-                    "when": "resourceExtname == .styl",
-                    "command": "webfont.downloadFont"
+                    "command": "webfont"
                 }
-
             ]
         }
     },
@@ -88,13 +59,14 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "tslint": "^5.8.0",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "@types/mocha": "^9.1.1",
+		"@types/node": "^16.11.33",
+        "@types/vscode": "^1.68.0",
+        "mocha": "^10.0.0",
+        "typescript": "^4.7.4",
+        "tslint": "^5.8.0"
     },
     "dependencies": {
-        "axios": "^0.18.0"
+        "axios": "^0.27.2"
     }
 }
