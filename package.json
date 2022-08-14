@@ -23,7 +23,7 @@
     "activationEvents": [
         "onCommand:webfont"
     ],
-    "main": "./out/src/extension",
+    "main": "./out/extension.js",
     "capabilities": {
         "untrustedWorkspaces": {
             "supported": true
@@ -67,7 +67,7 @@
         }
     },
     "scripts": {
-        "vscode:prepublish": "npm run compile",
+        "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./"
     },
     "devDependencies": {
