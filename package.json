@@ -4,17 +4,32 @@
     "description": "Import and download fonts from Fontstorage.com collection.",
     "version": "1.2.0",
     "icon": "images/logo.jpg",
-    "publisher": "WebFont",
+    "publisher": "Fontstorage",
+    "homepage": "https://github.com/WebFont/webfont_vscode/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/WebFont/webfont_vscode.git"
+    },
     "engines": {
         "vscode": "^1.68.0"
     },
     "categories": [
         "Other"
     ],
+    "keywords": [
+        "web font",
+        "fonts"
+    ],
     "activationEvents": [
         "onCommand:webfont"
     ],
-    "main": "./out/extension",
+    "main": "./out/src/extension",
+    "capabilities": {
+        "untrustedWorkspaces": {
+            "supported": true
+        },
+        "virtualWorkspaces": true
+    },
     "contributes": {
         "commands": [
             {
@@ -53,14 +68,11 @@
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "compile": "tsc -watch -p ./"
     },
     "devDependencies": {
         "@types/mocha": "^9.1.1",
-		"@types/node": "^16.11.33",
+        "@types/node": "^16.11.33",
         "@types/vscode": "^1.68.0",
         "mocha": "^10.0.0",
         "typescript": "^4.7.4",
