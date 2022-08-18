@@ -2,6 +2,9 @@
 
 Import and download fonts from [Fontstorage.com](https://fontstorage.com/) collection. 
 
+
+![alt text](https://fontstorage.com/static/i/vsc.gif)
+
 ## Features
 
 Search for fonts from the editor. Quick download links and subsetting.
