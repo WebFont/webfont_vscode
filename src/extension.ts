@@ -80,7 +80,7 @@ export function activate(context: vscode.ExtensionContext) {
             }
 
             if (selectedOption === 'Download font(ttf/otf)') {
-                vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(`${urls.download_url}${selectedFont.fontObject.font_slug}/${selectedFont.fontObject.font_slug}.zip`))
+                vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(`${urls.download_url}${selectedFont.fontObject.slug}/${selectedFont.fontObject.slug}.zip`))
             }
 
             if (selectedOption === 'Subsetting') {
