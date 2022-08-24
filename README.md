@@ -3,7 +3,7 @@
 Import and download fonts from [Fontstorage.com](https://fontstorage.com/) collection. 
 
 
-![alt text](https://fontstorage.com/static/i/vsc.gif)
+![usage](images/usage.gif)
 
 ## Features
 

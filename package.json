@@ -2,7 +2,7 @@
     "name": "webfont-vscode",
     "displayName": "Webfont",
     "description": "Import and download fonts from Fontstorage.com collection.",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "icon": "images/logo.jpg",
     "publisher": "Fontstorage",
     "homepage": "https://github.com/WebFont/webfont_vscode/blob/master/README.md",
