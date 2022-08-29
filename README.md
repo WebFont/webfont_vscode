@@ -10,7 +10,7 @@ Import and download fonts from the [Fontstorage.com](https://fontstorage.com/) c
 * Search by font name in the Fontstorage collection right from the editor.
 * Insert font import.
 * Download fonts from the Fontstorage website.
-* Open Fontstorage webside to make a subset copy of the selected font.
+* Open Fontstorage website to make a subset copy of the selected font.
 
 ## Usages
 
